@@ -37,4 +37,25 @@ public class AbilityTest {
 
         confirm(poder, cannotBeSavedBecause("Duplicated"));
     }
+    @Test
+    public void poderSemDescricaoNaoPodeSerSalvo() {
+    	poder.setStrenth(Strenth.STRONG);
+        confirm(poder, cannotBeSavedBecause("Description"));
+
+    }
+    @Test
+    public void poderComDescricaoVaziaNaoPodeSerSalvo() {
+        poder.setDescription("");
+        poder.setStrenth(Strenth.STRONG);
+        confirm(poder, cannotBeSavedBecause("Description"));
+
+    }
+    @Test
+    public void poderSemStrenthNaoPodeSerSalvo() {
+        poder.setDescription("SPEED");
+        confirm(poder, cannotBeSavedBecause("Strenth"));
+
+    }    
+    
+    
 }

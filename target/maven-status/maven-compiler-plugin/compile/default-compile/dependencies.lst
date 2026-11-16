@@ -5,7 +5,7 @@ classpath:/Users/dev/.m2/repository/ch/qos/reload4j/reload4j/1.2.22/reload4j-1.2
 classpath:/Users/dev/.m2/repository/wonder/core/ERExtensions/7.5-SNAPSHOT/ERExtensions-7.5-SNAPSHOT.jar	2309967:1789162304000
 classpath:/Users/dev/.m2/repository/wonder/core/ERWebObjects/1.0/ERWebObjects-1.0.jar	76318:1453760889000
 classpath:/Users/dev/.m2/repository/wonder/core/JavaWOExtensions/7.5-SNAPSHOT/JavaWOExtensions-7.5-SNAPSHOT.jar	176982:1789162280000
-classpath:/Users/dev/.m2/repository/com/webobjects/JavaXML/5.4.3/JavaXML-5.4.3.jar	6978345:1383000045000
+classpath:/Users/dev/.m2/repository/com/webobjects/JavaXML/5.4.3/JavaXML-5.4.3.jar	6978345:1791741972639
 classpath:/Users/dev/.m2/repository/com/webobjects/JavaEOControl/5.4.3/JavaEOControl-5.4.3.jar	272836:1383000043000
 classpath:/Users/dev/.m2/repository/com/webobjects/JavaWOJSPServlet/5.4.3/JavaWOJSPServlet-5.4.3.jar	30482:1383000045000
 classpath:/Users/dev/.m2/repository/com/webobjects/JavaWebServicesSupport/5.4.3/JavaWebServicesSupport-5.4.3.jar	72075:1383000043000
@@ -17,8 +17,6 @@ classpath:/Users/dev/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/ht
 classpath:/Users/dev/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar	61829:1404583945000
 classpath:/Users/dev/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar	501879:1537370669000
 classpath:/Users/dev/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar	335042:1508252044000
-classpath:/Users/dev/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar	382708:1621056564000
-classpath:/Users/dev/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar	45024:1341868082000
 classpath:/Users/dev/.m2/repository/wonder/core/WOOgnl/7.5-SNAPSHOT/WOOgnl-7.5-SNAPSHOT.jar	57390:1789162440000
 classpath:/Users/dev/.m2/repository/ognl/ognl/3.2.10/ognl-3.2.10.jar	249736:1544787938000
 classpath:/Users/dev/.m2/repository/org/javassist/javassist/3.24.1-GA/javassist-3.24.1-GA.jar	777727:1544462167000

@@ -123,19 +123,19 @@ public class PowerListPage extends ERXComponent {
     public WOActionResults salvar() {
         sucesso = null;
 
-        if (powerNovo.description() == null || powerNovo.description().trim().isEmpty() || powerNovo.strenth() == null) {
-            erro = "Fill in all the requested information (Description and Strength).";
-            return null;
-        }
 
+
+        // 2. Agora é seguro fazer o trim e toUpperCase
         powerNovo.setDescription(powerNovo.description().trim().toUpperCase());
 
         try {
+            powerNovo.validateForSave();
             powerNovo.editingContext().saveChanges();
         } catch (NSValidation.ValidationException e) {
             erro = "Duplicated: there is already a power with this description.";
             return null;
         }
+        
 
         erro = null;
         mostrandoForm = false;
@@ -144,7 +144,6 @@ public class PowerListPage extends ERXComponent {
         powers = null;
         return null;
     }
-    
 
     public WOActionResults cancelar() {
         mostrandoForm = false;

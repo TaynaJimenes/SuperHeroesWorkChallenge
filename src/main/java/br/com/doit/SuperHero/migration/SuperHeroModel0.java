@@ -1,5 +1,6 @@
 package br.com.doit.SuperHero.migration;
 
+
 import com.webobjects.eocontrol.EOEditingContext;
 import com.webobjects.foundation.NSArray;
 
@@ -14,6 +15,8 @@ public class SuperHeroModel0 extends ERXMigrationDatabase.Migration {
         return null;
     }
 
+    
+	
     @Override
     public void downgrade(EOEditingContext editingContext, ERXMigrationDatabase database) throws Throwable {
        

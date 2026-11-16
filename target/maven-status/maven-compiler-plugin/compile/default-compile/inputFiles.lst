@@ -1,4 +1,13 @@
-/Users/dev/Documents/SuperHero/super-hero/src/main/java/br/com/doit/SuperHero/app/Application.java
-/Users/dev/Documents/SuperHero/super-hero/src/main/java/br/com/doit/SuperHero/app/DirectAction.java
-/Users/dev/Documents/SuperHero/super-hero/src/main/java/br/com/doit/SuperHero/app/Session.java
-/Users/dev/Documents/SuperHero/super-hero/src/main/java/br/com/doit/SuperHero/components/Main.java
+/Users/dev/Documents/Personal/Github/SuperHeroesWorkChallenge/src/main/java/br/com/doit/SuperHero/app/Application.java
+/Users/dev/Documents/Personal/Github/SuperHeroesWorkChallenge/src/main/java/br/com/doit/SuperHero/app/DirectAction.java
+/Users/dev/Documents/Personal/Github/SuperHeroesWorkChallenge/src/main/java/br/com/doit/SuperHero/app/Session.java
+/Users/dev/Documents/Personal/Github/SuperHeroesWorkChallenge/src/main/java/br/com/doit/SuperHero/components/Main.java
+/Users/dev/Documents/Personal/Github/SuperHeroesWorkChallenge/src/main/java/br/com/doit/SuperHero/components/PowerListPage.java
+/Users/dev/Documents/Personal/Github/SuperHeroesWorkChallenge/src/main/java/br/com/doit/SuperHero/components/SuperHerosListPage.java
+/Users/dev/Documents/Personal/Github/SuperHeroesWorkChallenge/src/main/java/br/com/doit/SuperHero/migration/SuperHeroModel0.java
+/Users/dev/Documents/Personal/Github/SuperHeroesWorkChallenge/src/main/java/br/com/doit/SuperHero/model/Ability.java
+/Users/dev/Documents/Personal/Github/SuperHeroesWorkChallenge/src/main/java/br/com/doit/SuperHero/model/Strenth.java
+/Users/dev/Documents/Personal/Github/SuperHeroesWorkChallenge/src/main/java/br/com/doit/SuperHero/model/SuperHero.java
+/Users/dev/Documents/Personal/Github/SuperHeroesWorkChallenge/src/main/java/br/com/doit/SuperHero/model/_Ability.java
+/Users/dev/Documents/Personal/Github/SuperHeroesWorkChallenge/src/main/java/br/com/doit/SuperHero/model/_SuperHero.java
+/Users/dev/Documents/Personal/Github/SuperHeroesWorkChallenge/src/main/java/br/com/doit/SuperHero/model/package-info.java

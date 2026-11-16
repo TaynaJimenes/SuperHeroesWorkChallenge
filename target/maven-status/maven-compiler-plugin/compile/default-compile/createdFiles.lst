@@ -1,0 +1,13 @@
+br/com/doit/SuperHero/app/Session.class
+br/com/doit/SuperHero/app/Application.class
+br/com/doit/SuperHero/components/SuperHerosListPage.class
+br/com/doit/SuperHero/model/Strenth.class
+br/com/doit/SuperHero/app/DirectAction.class
+br/com/doit/SuperHero/model/Ability.class
+br/com/doit/SuperHero/model/_Ability.class
+br/com/doit/SuperHero/model/package-info.class
+br/com/doit/SuperHero/model/SuperHero.class
+br/com/doit/SuperHero/components/PowerListPage.class
+br/com/doit/SuperHero/model/_SuperHero.class
+br/com/doit/SuperHero/components/Main.class
+br/com/doit/SuperHero/migration/SuperHeroModel0.class

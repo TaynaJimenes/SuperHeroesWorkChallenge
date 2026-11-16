@@ -23,14 +23,24 @@ public class Ability extends _Ability {
     public void validateForSave() throws NSValidation.ValidationException {
         super.validateForSave();
 
-        NSArray<Ability> mesmaDescricao = new ERXFetchSpecification<Ability>(
+        NSArray<Ability> descricaoDuplicada = new ERXFetchSpecification<Ability>(
                 ENTITY_NAME, ERXQ.equals(DESCRIPTION_KEY, description()), null)
                 .fetchObjects(editingContext());
 
-        for (Ability outro : mesmaDescricao) {
+        for (Ability outro : descricaoDuplicada) {
             if (!outro.equals(this)) {
                 throw new NSValidation.ValidationException("Duplicated");
             }
+        }
+            NSArray<Ability> descricaoVazia = new ERXFetchSpecification<Ability>(
+                    ENTITY_NAME, ERXQ.equals(DESCRIPTION_KEY, description()), null)
+                    .fetchObjects(editingContext());
+
+            for (Ability outro : descricaoVazia) {
+                if (outro.equals(null) || outro.equals("")) {
+                    throw new NSValidation.ValidationException("Description");
+                }    
+            
         }
     }
 }

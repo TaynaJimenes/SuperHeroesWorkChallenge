@@ -1,12 +1,355 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+		TEXT = #3E2E0C 100%
+				#FFCE00 100%
+				#27200E 100%
+				#27200E 1%
+				LINEAR #1, #2, 100%
+				#FFD64F 100%
+				#FFEDB5 100%
+				#FFF2CB 100%
+				#FFF6DB 100%
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>Hello WOnder world!</title>
-</head>
-<body>
-	Hello WOnder world!
-</body>
+		
+-->
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+
+<html> 
+	<head> 
+		<style>
+		
+		*{
+			color: #3E2E0C;
+		   	margin: 0;
+		   	padding: 0;
+		   	font-family: Arial, Helvetica, sans-serif;
+		   	
+	   	  transition:
+		    opacity 0.5s ease,
+		    transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+		    display 0.5s allow-discrete;
+		
+		}
+		select {
+			width: 100%;
+			min-width: fit-content;
+			height: 100%;
+		}
+		form{
+		
+		
+		   justify-content: center;
+		   align-items: center;
+		   background-color:  tranparent;
+		   min-height: fit-content;
+		   min-width: fit-content;
+		
+
+		
+		}
+		div{
+			background-color: transparent;
+		
+			  opacity: 1;
+			  transform: scale(1) translateY(0);
+			
+			  @starting-style {
+				    opacity: 0;
+				    transform: scale(0.90) translateY(20px);
+			  }
+		}
+		img{
+			width: 100px;
+			height: 67px;
+			
+		}
+		body, html{
+		   margin-top:1px;
+		   background-color: #FDF4D7;
+		   height: 100dvh;
+		}
+		
+		.menu{
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			
+			justify-content: top;
+			align-items: top;
+			
+			width:fit-content;
+			height: fit-content;
+			margin: 0;
+			padding: 0 0 0 0;
+			
+		}
+		.button{
+		
+			border: gray  1px;
+		    cursor: pointer;
+		    padding: 5px 10px 5px 10px;
+		    transition: background-color 0.5s transform 0.5s color 1s;
+		    margin: 30px 20px 0px 20px;
+			padding: 30px 10px;
+			font-size: 0.6rem;
+			filter: drop-shadow(0 4px 4px #00000040);
+			background-image: linear-gradient(to bottom, #FFD234, #E3BA2480, #C49F1345);
+			width: 100%;	
+			
+			
+		}
+		.button:active  {
+		    background-color: #FFD23485;
+		    transform: scale(0.98);
+			transition: background-color 0.5s;
+		}
+		button:hover {
+			color: pink;
+			transition: color 1s;
+			
+			
+		}	
+		.header{
+			display: flex;
+			flex-direction: row;
+			min-gap:25px;
+			justify-content: space-around;
+			gap: clamp(10px, 80vw, 425px);
+			position: relative;
+		
+		}
+		.content{
+		
+			display: flex;
+			flex-direction: row;
+			position: relative;
+			
+		
+		}
+	   .main-content{
+
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			margin: 0;
+			padding:2px;
+			width: 100%;
+			
+		}
+		.inner-header {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		
+		}
+		#header-btn{
+		
+		border-radius: 20px;
+	    height: 0.5rem;
+	    padding:  10px 15px 20px 15px;
+	    margin: 5px 5px 5px 5px;
+
+		
+		}
+
+
+
+		/*table area*/
+		.table-title{
+			display: flex;
+			position: relative;
+			justify-content: center;
+			align-items: center;
+		
+		}	
+			
+		
+		
+		</style>
+		
+	
+<!--CSS da tabela -->	
+	<style>
+	
+	
+	 }
+    .table {
+     border-collapse: collapse;
+     margin: 15px 0;
+     width: fit-content;
+     }
+    .table th,
+    .table td {
+     border: 1px solid #C49F13;
+     justify-content: center;
+     align-items: center;
+     padding: 8px 12px;
+     text-align: left;
+     min-width: 250px;
+
+     }
+    .table th {
+     background-color: #FFD64F;
+    }
+    .msg-sucesso {
+     color: #2E7D32;
+     font-weight: bold;
+     margin: 10px 0;
+     }
+    .msg-erro {
+    color: #C62828;
+    font-weight: bold;
+    margin: 10px 0;
+    }
+    .form-box {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 15px;
+
+    }
+    .table-div {
+    display: flex;
+	flex-direction: row;
+	position: relative;
+	margin: 0;
+	padding:2px;
+	width: fit-content;
+	justify-content: center;
+	align-items: center;
+
+	}
+	.area-tables {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+
+	
+	}
+	.inner-btn-table-area {
+	
+	width: 24px;
+    height: 24px;
+    overflow: hidden;
+    padding: 5px;
+
+
+    }
+	.inner-btn-table {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+
+	}
+	#action-area {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	justify-content: space-around;
+	}
+	
+	
+	
+	
+
+	
+			
+
+
+
+
+    :root {
+      /* SUAS CORES ORIGINAIS PRESERVADAS IDENTICAMENTE */
+      --gold-center: #FFCE00;
+      --gold-mid-1:  #FFCE00;
+      --gold-mid-2:  #FFDB65;
+      --gold-light-1: #FFE48E;
+      --gold-light-2: #FFEDB5;
+      --gold-dark-1: #52420B;
+      --gold-dark-2: #3D320D;
+      --gold-base:   #FFF6DB;
+    }
+
+    /* Tela cheia estática e limpa para o ERP */
+
+
+		
+	.diamond-glow-core {
+      position: fixed;
+      width: 80px;
+      height: 120px;
+      background-color: var(--gold-center);
+      border-radius: 35px;
+		z-index: 0;	
+      box-shadow:
+        0 0 50px 25px var(--gold-center),
+        0 0 100px 70px var(--gold-mid-1),
+        0 0 180px 130px var(--gold-mid-2),
+        0 0 280px 210px var(--gold-light-1),
+        0 0 400px 320px var(--gold-light-2),
+        0 0 600px 480px var(--gold-base);
+
+      transform: translate3d(0, 0, 0);
+      filter: blur(800px);
+      pointer-events: none;
+    }
+	   </style>
+		
+		
+		
+		 <title >Super Heroes</title>
+	</head>
+	<body> 
+	  <div class="diamond-glow-core"></div>
+	
+		<div class="bg-wrapper">
+		    <div class="light-rays" style="opacity: 100%;"></div>
+		    <div class="light-source" ></div>
+	  	</div>
+	
+	<h1 class="table-name" align="center"></h1>
+	
+	<div class="header">
+	
+	  <div class="inner-header"> <wo:WOImage class="" framework="app" filename="logo_dark.png"></wo:WOImage></div>
+	  <div class="inner-header"></div>
+	  <div class="inner-header">
+	  	  <wo:WOSubmitButton class="button" id="header-btn" action="$teste" value="pesquisar"></wo:WOSubmitButton>
+	  	  <wo:WOSubmitButton class="button" id="header-btn" action="$teste" value="lingua"></wo:WOSubmitButton>
+	  </div>
+	
+	</div>
+	
+	
+	<div class="content">
+			<div class="menu">
+				<wo:WOForm>
+	             <wo:WOSubmitButton class="button" action="$openPowers" value="POWERS"></wo:WOSubmitButton>
+	            </wo:WOForm>
+		        <wo:WOForm>
+		          <wo:WOSubmitButton class="button" action="$openSuperHeros" value="SUPER HEROS"></wo:WOSubmitButton>
+		        </wo:WOForm>
+			</div>
+	
+			<div class="main-content" >
+
+				<wo:WOComponentContent />
+            </div>
+
+      </div>
+
+	</body>
+	
+
+
 </html>

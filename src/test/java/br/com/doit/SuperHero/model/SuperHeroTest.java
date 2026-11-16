@@ -41,7 +41,34 @@ public class SuperHeroTest {
 
         confirm(heroi, cannotBeSavedBecause("Duplicated"));
     }
+
+
+
+    @Test
+    public void heroiSemNomeNaoPodeSerSalvo() {
+        heroi.setAbilityRelationship(poder);
+        confirm(heroi, cannotBeSavedBecause("name"));
+
+    }
+    @Test
+    public void heroiComEspacosNoNomeNaoPodeSerSalvo() {
+    	heroi.setName("  "); // trim();
+        heroi.setAbilityRelationship(poder);
+    	confirm(heroi, cannotBeSavedBecause("name"));
+    }
+    @Test
+    public void heroiComNomeVazioNaoPodeSerSalvo() {
+        heroi.setName("");
+        heroi.setAbilityRelationship(poder);
+        confirm(poder, cannotBeSavedBecause("Insert"));
+
+    }
+    @Test
+    public void poderSemRelationshipNaoPodeSerSalvo() {
+        heroi.setName("FLASH");
+        confirm(heroi, cannotBeSavedBecause("abilityRelationship"));
+
+    } 
     
-   
     
 }

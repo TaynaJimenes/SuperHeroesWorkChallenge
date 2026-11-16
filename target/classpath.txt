@@ -12,8 +12,6 @@ org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar
 commons-logging/commons-logging/1.2/commons-logging-1.2.jar
 org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar
 commons-codec/commons-codec/1.11/commons-codec-1.11.jar
-junit/junit/4.13.1/junit-4.13.1.jar
-org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
 wonder/core/WOOgnl/7.5-20260911.212917-9/WOOgnl-7.5-20260911.212917-9.jar
 ognl/ognl/3.2.10/ognl-3.2.10.jar
 org/javassist/javassist/3.24.1-GA/javassist-3.24.1-GA.jar
